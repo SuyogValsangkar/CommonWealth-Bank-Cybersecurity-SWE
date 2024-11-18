@@ -1,0 +1,55 @@
+/* Make sure that the .css file is linked to the .html file */
+html {
+    font-family: 'Lucida Sans'; /* we are chosing a font family here */
+}
+
+/* set up colors for the entire file */
+:root {
+    --primary-yellow: #FFCC00;
+    --beacon-yellow: #FFFF00;
+    --gray: #BEBEB9;
+    --light-gray: #EBEBEB;
+    --black: #1E1E1E;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--white);
+}
+
+h1 { /* for all h1 */
+    color: var(--black);
+    font-size: 70pt;
+    border-bottom: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: var(--primary-yellow);
+}
+
+h2 {
+    color: var(--black);
+    font-size: 38pt;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 12px;
+    text-decoration-color: var(--gray);
+}
+
+p { /* For all p elements */
+    color: var(--black);
+    font-size: 18pt;
+    word-wrap: break-word;
+    max-width: 80ch;
+}
+
+ul {
+    color: var(--black);
+    font-size: 18pt;
+    word-wrap: break-word;
+    max-width: 70ch;
+}
+
+ul li::marker {
+    color: var(--primary-yellow);
+}
+
+
